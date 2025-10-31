@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">PRAKPAM_userinput</string>
+    <string name="app_name">Input Pengguna</string>
+    <string name="submit">Submit</string>
 </resources>
