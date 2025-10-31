@@ -1,5 +1,3 @@
-
-import android.widget.Button
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -8,7 +6,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.selection.selectable
-import androidx.compose.material3.Card
+import androidx.compose.material3.Button
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Divider
 import androidx.compose.material3.ElevatedCard
@@ -104,7 +102,7 @@ fun FormDataDiri(modifier: Modifier
         Button(
             modifier = Modifier.fillMaxWidth(1f),
             // the button is enable when the user makes a selection
-            enable = textAlamat.isNotEmpty(),
+            enabled = textAlamat.isNotEmpty(),
 
             onClick = {
                 nama = textNama

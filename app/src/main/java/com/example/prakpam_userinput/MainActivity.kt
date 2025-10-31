@@ -1,5 +1,6 @@
 package com.example.prakpam_userinput
 
+import FormDataDiri
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -20,8 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             PRAKPAM_userinputTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    FormDataDiri(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
