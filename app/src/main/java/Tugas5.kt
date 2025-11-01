@@ -74,3 +74,6 @@ fun FormulirPendaftaran(modifier: Modifier) {
                 .padding(16.dp),
             textAlign = androidx.compose.ui.text.style.TextAlign.Center
         )
+
+        Spacer(modifier = Modifier.height(16.dp))
+
