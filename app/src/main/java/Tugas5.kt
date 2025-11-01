@@ -157,3 +157,25 @@ fun FormulirPendaftaran(modifier: Modifier) {
                     }
                 }
             }
+            Text(
+                text = "ALAMAT",
+                fontWeight = FontWeight.SemiBold,
+                fontSize = 15.sp,
+                modifier = Modifier
+                    .padding(top = 9.dp, start = 9.dp)
+            )
+            OutlinedTextField(
+                value = textAlamat,
+                singleLine = true,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(start = 12.dp, end = 12.dp),
+
+                label = { Text(text = "Alamat Lengkap") },
+
+                onValueChange = {
+                    textAlamat = it
+                }
+            )
+            Spacer(modifier = Modifier.height(8.dp))
+
