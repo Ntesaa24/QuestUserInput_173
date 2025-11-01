@@ -48,3 +48,6 @@ fun FormulirPendaftaran(modifier: Modifier) {
     var jenisKelamin by remember { mutableStateOf("") }
     var status by remember { mutableStateOf("") }
 
+    val kawin:List<String> = listOf("Janda", "Lajang", "Duda")
+    val gender:List<String> = listOf("Laki-laki", "Perempuan")
+
