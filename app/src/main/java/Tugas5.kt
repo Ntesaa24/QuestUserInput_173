@@ -113,3 +113,22 @@ fun FormulirPendaftaran(modifier: Modifier) {
                 modifier = Modifier
                     .padding(top = 9.dp, start = 9.dp)
             )
+            Column {
+                gender.forEach { item ->
+                    Row(
+                        modifier = Modifier.selectable(
+                            selected = textJK == item,
+
+                            onClick = { textJK = item }
+                        ), verticalAlignment = Alignment.CenterVertically) {
+                        RadioButton(
+                            selected = textJK == item,
+
+                            onClick = {
+                                textJK = item
+                            })
+                        Text(item)
+                    }
+                }
+            }
+
