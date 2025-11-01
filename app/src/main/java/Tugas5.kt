@@ -35,4 +35,4 @@ import com.example.prakpam_userinput.R
 
 
 @Composable
-fun FormulirPendaftaran(modifier: Modifier) {
+fun FormulirPendaftaran(modifier: Modifier) {}
