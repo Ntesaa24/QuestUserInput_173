@@ -55,4 +55,11 @@ fun FormulirPendaftaran(modifier: Modifier) {
         modifier = Modifier.padding(top = 50.dp)
             .fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally
-    )
+    ) {
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(Color.White)
+                .padding(vertical = 12.dp, horizontal = 16.dp)
+                .padding(all = 12.dp)
+        )
