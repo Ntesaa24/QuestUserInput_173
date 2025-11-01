@@ -77,3 +77,11 @@ fun FormulirPendaftaran(modifier: Modifier) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
+        ElevatedCard(
+            elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
+            colors = CardDefaults.cardColors(containerColor = Color.LightGray),
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(600.dp)
+                .padding(all = 12.dp)
+        )
