@@ -179,3 +179,21 @@ fun FormulirPendaftaran(modifier: Modifier) {
             )
             Spacer(modifier = Modifier.height(8.dp))
 
+            //tombol submit
+            Button(
+                modifier = Modifier
+                    .fillMaxWidth(1f),
+                enabled = textAlamat.isNotEmpty(),
+
+                onClick = {
+                    nama = textNama
+                    jenisKelamin = textJK
+                    status = textStatusPerkawinan
+                    alamat = textAlamat
+                }
+            ) {
+                Text(text= stringResource(id = R.string.submit))
+            }
+        }
+    }
+}
