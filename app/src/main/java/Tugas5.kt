@@ -84,4 +84,11 @@ fun FormulirPendaftaran(modifier: Modifier) {
                 .fillMaxWidth()
                 .height(600.dp)
                 .padding(all = 12.dp)
-        )
+        ) {
+            // NAMA LENGKAP
+            Text(
+                text = "NAMA LENGKAP",
+                fontWeight = FontWeight.SemiBold,
+                fontSize = 20.sp,
+                modifier = Modifier.align(Alignment.Start)
+            )
