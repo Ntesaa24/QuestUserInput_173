@@ -132,3 +132,28 @@ fun FormulirPendaftaran(modifier: Modifier) {
                 }
             }
 
+            Text(
+                text = "STATUS KAWIN",
+                fontWeight = FontWeight.SemiBold,
+                fontSize = 20.sp,
+                modifier = Modifier
+                    .padding(top = 9.dp, start = 9.dp)
+            )
+            Column {
+                kawin.forEach { item ->
+                    Row(
+                        modifier = Modifier.selectable(
+                            selected = textStatusPerkawinan == item,
+
+                            onClick = { textStatusPerkawinan = item }
+                        ), verticalAlignment = Alignment.CenterVertically) {
+                        RadioButton(
+                            selected = textStatusPerkawinan == item,
+
+                            onClick = {
+                                textStatusPerkawinan = item
+                            })
+                        Text(item)
+                    }
+                }
+            }
