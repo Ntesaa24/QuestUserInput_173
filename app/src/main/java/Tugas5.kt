@@ -35,4 +35,10 @@ import com.example.prakpam_userinput.R
 
 
 @Composable
-fun FormulirPendaftaran(modifier: Modifier) {}
+fun FormulirPendaftaran(modifier: Modifier) {
+    //variable-variable untuk mengingat nilai masukan dari keyboard
+    var textNama by remember { mutableStateOf("") }
+    var textAlamat by remember { mutableStateOf("") }
+    var textJK by remember { mutableStateOf("") }
+    var textStatusPerkawinan by remember { mutableStateOf("") }
+
