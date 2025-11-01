@@ -51,3 +51,8 @@ fun FormulirPendaftaran(modifier: Modifier) {
     val kawin:List<String> = listOf("Janda", "Lajang", "Duda")
     val gender:List<String> = listOf("Laki-laki", "Perempuan")
 
+    Column(
+        modifier = Modifier.padding(top = 50.dp)
+            .fillMaxWidth(),
+        horizontalAlignment = Alignment.CenterHorizontally
+    )
