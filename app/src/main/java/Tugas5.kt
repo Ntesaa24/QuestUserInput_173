@@ -92,3 +92,15 @@ fun FormulirPendaftaran(modifier: Modifier) {
                 fontSize = 20.sp,
                 modifier = Modifier.align(Alignment.Start)
             )
+            OutlinedTextField(
+                value = textNama,
+                singleLine = true,
+                shape = MaterialTheme.shapes.large,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(start = 12.dp, end = 12.dp),
+                label = { Text(text = "Nama Lengkap") },
+                onValueChange = {
+                    textNama = it
+                }
+            )
