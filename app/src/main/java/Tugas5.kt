@@ -63,3 +63,14 @@ fun FormulirPendaftaran(modifier: Modifier) {
                 .padding(vertical = 12.dp, horizontal = 16.dp)
                 .padding(all = 12.dp)
         )
+        Text(
+            text = "Formulir Pendaftaran",
+            fontSize = 22.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.White,
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(color = Color.Blue)
+                .padding(16.dp),
+            textAlign = androidx.compose.ui.text.style.TextAlign.Center
+        )
